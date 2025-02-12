@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition Detection</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+<div class="card">
+    <h1>Nutrition Detection App</h1>
+    <form id="uploadForm">
+        <label for="weightInput"><strong>Enter Weight (grams):</strong></label>
+        <input type="number" id="weightInput" name="weight" placeholder="Enter weight in grams" required>
+
+        <input type="file" name="image" accept="image/*" id="fileInput" multiple>
+        <button type="submit" id="submitBtn">Upload and Detect</button>
+    </form>
+</div>
+
+<div class="card">
+    <h2>Or use your live camera</h2>
+    <button id="startCameraBtn">Start Camera</button> <!-- Button to start the camera -->
+    <video id="liveCamera" autoplay muted class="hidden"></video> <!-- Live Camera -->
+    <div id="cameraControls" class="hidden">
+        <button id="captureBtn">Capture</button> <!-- Capture Button -->
+        <button id="cancelBtn">Cancel</button> <!-- Cancel Button -->
+    </div>
+    <canvas id="snapshotCanvas" class="hidden"></canvas> <!-- Canvas for Snapshot -->
+    <div id="capturedImage" class="hidden">
+        <h3>Captured Image:</h3>
+        <img id="capturedImg" alt="Captured snapshot">
+        <button id="submitCaptureBtn">Submit</button>
+        <button id="cancelCaptureBtn">Cancel</button>
+    </div>
+</div>
+
+<div id="progress" class="card hidden">Loading...</div> <!-- Progress Indicator -->
+
+<div id="results" class="hidden"></div>
+
+<button id="backHomeBtn" class="hidden" onclick="goHome()">Change Image</button> <!-- Back to Home Button -->
+
+<script src="/static/js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

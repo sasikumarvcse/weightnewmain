@@ -1,0 +1,221 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #4caf50;
+    margin-bottom: 20px;
+}
+
+form {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#progress {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #4caf50;
+    font-weight: bold;
+}
+
+#results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Add spacing between cards */
+}
+
+.card {
+    background-color: #dfffd6;
+    border: 1px solid #a8e6a3;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin: 10px; /* Add margin for flexibility */
+}
+
+.card img {
+    border-radius: 15px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 1.5rem;
+    background: rgb(238,174,202);
+    background: linear-gradient(133deg, rgba(255,255,255,1) 0%, rgba(211,210,231,1) 19%, rgba(11,39,73,1) 100%);
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 0.6s ease-in-out;
+}
+
+i:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.7) 0px 18px 36px -18px inset;
+}
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    width: 100%;
+    max-width: 600px;
+}
+
+.card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+table td {
+    padding: 8px 0;
+    text-align: left;
+}
+
+table tr:not(:last-child) td {
+    border-bottom: 1px solid #e0e0e0;
+}
+.card table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.card td {
+    border: none;
+    padding: 5px;
+}
+.nutrition-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.nutrition-table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd; /* Light gray separator */
+}
+
+.nutrition-table tr:last-child td {
+    border-bottom: none; /* Remove border from the last row */
+}
+
+.card {
+    max-width: 500px; /* Set a max width for the card */
+    padding: 15px;
+    margin: 15px auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background: #fff;
+}
+.card {
+    background-color: #e6f7e6; /* Light green background */
+    border: 1px solid #b2d8b2; /* Soft green border */
+    border-radius: 10px;       /* Rounded corners */
+    padding: 20px;             /* Space inside the card */
+    margin: 15px 0;            /* Space between cards */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.card h3 {
+    color: #2e7d32; /* Darker green for headings */
+    margin-bottom: 10px;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.nutrition-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nutrition-table td {
+    padding: 8px;
+    border: 1px solid #b2d8b2;
+}
+
+.nutrition-table td:first-child {
+    font-weight: bold;
+    color: #2e7d32; /* Darker green for labels */
+}
+.card {
+    background-color: #eaffea;  /* Light green background */
+    border: 1px solid #c5e1c5;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Ensuring a max-width */
+    text-align: center;
+    overflow: hidden; /* Prevents content from spilling */
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    overflow: hidden; /* Prevents the video from overflowing */
+}
+
+video {
+    width: 100%; /* Ensures the video fits within the card */
+    border-radius: 5px;
+}
